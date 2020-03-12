@@ -37,10 +37,12 @@ class App extends React.Component {
 
   render(){
     return(
-      <div>
+      <div className='App'>
+      <div className="user-card">
         {console.log("followers", this.state.followers)}
         {console.log("user", this.state.user)}
       <UserCard user={this.state.user} followers={this.state.followers} />
+      </div>
       </div>
     )
   }
